@@ -1,0 +1,9 @@
+No = 7;
+x1 = [6 5 4 3 2 1 0];
+x2 = [0 0 1]
+OHM = (2*pi)/No;
+n = 0:No-1;
+
+for r = 0:No-1
+    Y(r+1) = sum(y.*exp(-j*r*(OHM)*n))/No;
+end
